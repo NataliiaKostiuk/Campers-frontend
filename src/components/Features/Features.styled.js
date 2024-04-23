@@ -20,7 +20,7 @@ margin-bottom: 44px;
 
 export const Text = styled.div`
 font-size: 18px;
-font-weight: 500;
+font-weight: 400;
 line-height: 24px;
 text-align: center;
 color: #101828;
@@ -32,7 +32,7 @@ margin-bottom: 8px;
 
 export const Textspan = styled.div`
 font-size: 18px;
-font-weight: 500;
+font-weight: 400;
 line-height: 24px;
 text-align: center;
 color: #101828;
@@ -48,5 +48,5 @@ font-weight: 600;
 line-height: 24px;
 text-align: left;
 color: #101828;
-margin-bottom: 44px;
+margin-bottom: 34px;
 `;

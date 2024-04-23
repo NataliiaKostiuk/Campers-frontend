@@ -1,6 +1,11 @@
+import { Welcome } from "../../components/Welcome/Welcome"
+
+
 const WelcomePage = () => {
     return (
-           <><div>WelcomePage</div></> 
+        <section>
+        <Welcome/>
+        </section> 
     )
 
 }

@@ -6,7 +6,6 @@ import styled from 'styled-components';
 export const Fields = styled(Field)`
 width: 112px;
 height: 95px;
-padding: 17px 40px 17px 40px;
 border-radius: 10px; 
 border: 1px solid #10182833 ;
 

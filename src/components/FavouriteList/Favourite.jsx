@@ -32,10 +32,8 @@ function CutText(text, maxLength) {
 export const FavouriteList = () => {
 
   const isOpen = useSelector(selectIsModalOpen);
-    const dispatch = useDispatch();
-
+  const dispatch = useDispatch();
   const favorites = useSelector(selectFavourite);
-  console.log(favorites);
  
     const handleToggleFavorite = (id, item) => {
     const isFavorite = favorites.some(fav => fav.id === id);
@@ -43,14 +41,12 @@ export const FavouriteList = () => {
       dispatch(removeFromFavorites(id));
     } else {
       dispatch(addToFavorites({ id, item }));
-      }
-      
+      } 
   };
 
   const handleOpenModal = (id) => {
     dispatch(openModal(id));
   };
-
     return (
         <Wrapper>
             {favorites && favorites.map((favorite) => {

@@ -29,8 +29,8 @@ color: #101828;
 
 export const Card = styled.div`
 padding: 24px;
-max-width:  888px;
-height: 398px;
+width:888px;
+height: 358px;
  gap: 24px; 
 border-radius: 20px;
 margin-bottom: 32px;

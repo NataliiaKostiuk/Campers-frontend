@@ -4,5 +4,5 @@ export const Container = styled.div`
 margin-top:30px;
 display: flex;
 padding: 64px;
-width: 100%;
+width: 1324px;
 `

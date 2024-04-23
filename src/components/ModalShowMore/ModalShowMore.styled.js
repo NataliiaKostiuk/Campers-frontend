@@ -87,7 +87,7 @@ position: relative;
     height: 5px;
     top: 24px;
     left: 50%;
-    background-color: red;
+    background-color:  #E44848;
     border-radius: 3px;
     visibility: hidden;
     transform: translateX(-50%) scaleX(0);

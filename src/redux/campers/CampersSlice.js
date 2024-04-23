@@ -30,7 +30,6 @@ const campersSlice = createSlice({
 			})
 			.addCase(getSingleCamperThunk.fulfilled, (state, { payload }) => {
 				state.singleCamper = payload
-				console.log(payload);
             })
             .addMatcher(({ type }) => type.endsWith('/pending'), handlePending)
 			.addMatcher(({ type }) => type.endsWith('/rejected'), handleRejected)

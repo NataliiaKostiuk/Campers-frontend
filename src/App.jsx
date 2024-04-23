@@ -12,17 +12,19 @@ function App() {
 
   return (
     <>
-      <Routes>
-  <Route path="/" element={<SharedLayout />}>
-    <Route index element={<WelcomePage />} />
-    <Route path="/campers" element={<CampersPage />}>
-      <Route path=":favourite" element={<FavouritePage />} />
-      <Route path=":id/features" element={<Features />} />
-      <Route path=":id/reviews" element={<Reviews />} />
-    </Route>
-  </Route>
-      <Route path="*" element={<ErrorPage />} />
+  
+  <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route   index element={<WelcomePage />} />
+          <Route path="/campers" element={<CampersPage />}>
+            <Route path=":id/features" element={<Features />} />
+            <Route path=":id/reviews" element={<Reviews />} />
+          </Route>
+             <Route path="/favourite" element={<FavouritePage />} /> 
+        </Route>
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
+     
     </>
   );
 }

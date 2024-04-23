@@ -13,7 +13,7 @@ export const Input = styled.input`
 position:relative;
 width:  360px;
 height: 56px;
-padding: 18px 218px 18px 18px;
+padding: 18px;
 gap: 10px;
 border-radius: 10px;
 opacity: 0px;
@@ -37,7 +37,7 @@ position:relative;`;
 
 export const LocWrap = styled.div`
 position:absolute;
-top:45px;
+top:65px;
 left: 18px;
 `;
 export const Wrap = styled.div`

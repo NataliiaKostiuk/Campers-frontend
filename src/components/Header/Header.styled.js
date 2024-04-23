@@ -2,27 +2,27 @@ import styled from 'styled-components';
 
 import { NavLink } from "react-router-dom";
 
-export const Container = styled.div`  width: 100%;
+export const HeadWrap = styled.header`
+width: 100%;
+height: 60px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-width: 100%;
-height: 60px;
-display: flex;
-justify-content: center;
-align-items: center;
-padding-left:64px;
-padding-right:64px;
 background: #ffffff;
+border-radius: 10px;
+`
+
+export const Container = styled.div`
+width: 1312px; 
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
 `;
 export const Logo = styled.div`
-margin-right: auto;
-font-size: 20px;
-font-weight: 600;
-line-height: 24px;
-text-align: left;
-color: #101828;
+ margin-right: auto; 
 `;
 
 export const Navlink = styled(NavLink)`
@@ -36,5 +36,6 @@ color: #101828;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  &:hover {
 color: #E44848 ;
-  } 
+  }
+
 `
