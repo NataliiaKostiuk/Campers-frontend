@@ -1,5 +1,5 @@
 
-import { FilterCampers } from "../../components/Filtres/Filtres";
+// import { FilterCampers } from "../../components/Filtres/Filtres";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { AllCampersSelector } from  "../../redux/campers/selectors";
@@ -18,7 +18,7 @@ const CampersPage = () => {
 
     return (
         <Container>  
-            <FilterCampers />
+            {/* <FilterCampers /> */}
             <CampersCards/>
         </Container>
     )

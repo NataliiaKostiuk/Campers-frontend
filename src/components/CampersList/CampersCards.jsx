@@ -7,16 +7,16 @@ import { selectIsModalOpen } from "../../redux/modal/Selectors";
 import { selectFavourite } from "../../redux/Favourite/selector";
 import { addToFavorites } from "../../redux/Favourite/FavouriteSlice";
 import { removeFromFavorites } from "../../redux/Favourite/FavouriteSlice";
-import { Heart } from "../../assets/Heart";
-import { People } from "../../assets/People";
-import { Automatic } from "../../assets/Automatic";
-import { Air } from "../../assets/Air";
-import { Refueling } from "../../assets/IconRefueling";
-import { Kitchen } from "../../assets/Kitchen";
-import { Bed } from "../../assets/Bed";
-import { Location } from "../../assets/Loc";
-import { Star } from "../../assets/Star";
-import { RedStar } from '../../assets/RedStar';
+// import { Heart } from "../../assets/Heart";
+// import { People } from "../../assets/People";
+// import { Automatic } from "../../assets/Automatic";
+// import { Air } from "../../assets/Air";
+// import { Refueling } from "../../assets/IconRefueling";
+// import { Kitchen } from "../../assets/Kitchen";
+// import { Bed } from "../../assets/Bed";
+// import { Location } from "../../assets/Loc";
+// import { Star } from "../../assets/Star";
+// import { RedStar } from '../../assets/RedStar';
 import {
   Img, Title, Wrapper, WrapReview, Button, Description,
   Price, Card, WrapTitle, Heartspan, WrapSvg, Span, Review,
@@ -72,23 +72,39 @@ export const CampersCards = () => {
                                 <Title>{camper.name}</Title>
                                 <Price>€{camper.price}</Price>
                         <Heartspan onClick={() => handleToggleFavorite(camper.id, camper) }>
-                           {isFavorite ? <RedStar/> : <Heart/>}
+                           {/* {isFavorite ? <RedStar/> : <Heart/>} */}
                             </Heartspan>
                             </WrapTitle>
                 <WrapReview>           
-                            <Review><Star/></Review>
+                        <Review>
+                          {/* <Star /> */}
+                        </Review>
                             <Review>{camper.rating}</Review>
                             <Review>({camper.reviews.length}reviews)</Review>
-                             <Review><Location/>{camper.location}</Review>
+                        <Review>
+                          {/* <Location /> */}
+                          {camper.location}</Review>
                 </WrapReview>      
                    <Description>{cutedDescription}</Description>
                  <WrapSvg>
-                            <Span><People />{ camper.adults} adults</Span>
-                            <Span><Automatic/>Automatic</Span>
-                            <Span><Refueling/>Petrol</Span>
-                        {camper.kitchen && <Span><Kitchen/>Kitchen</Span>}
-                            <Span><Bed/>{ camper.bed}beds</Span>
-                            <Span><Air/>AC</Span>
+                            <Span>
+                              {/* <People /> */}
+                              { camper.adults} adults</Span>
+                            <Span>
+                              {/* <Automatic/> */}
+                              Automatic</Span>
+                            <Span>
+                              {/* <Refueling/> */}
+                              </Span>
+                        {camper.kitchen && <Span>
+                          {/* <Kitchen/> */}
+                          Kitchen</Span>}
+                            <Span>
+                              {/* <Bed/> */}
+                              { camper.bed}beds</Span>
+                            <Span>
+                              {/* <Air/> */}
+                              AC</Span>
                       </WrapSvg> 
                       <Button onClick={() => (handleOpenModal(camper.id))} >Show more</Button>
 
@@ -96,7 +112,7 @@ export const CampersCards = () => {
          </Card>
                 )
               })}
-         {isOpen && <ModalShowMore/>}
+         {/* {isOpen && <ModalShowMore/>} */}
         </Wrapper>
     )
 }

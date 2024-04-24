@@ -1,9 +1,11 @@
 
 import { Container } from "../CampersPage/CampersPage.styled"
-import { FavouriteList } from "../../components/FavouriteList/Favourite"
+// import { FavouriteList } from "../../components/FavouriteList/Favourite"
 const FavouritePage = () => {
     return (
-         <><Container><FavouriteList/></Container></>   
+        <><Container>
+            {/* <FavouriteList /> */}
+        </Container></>   
     )
 
 }
