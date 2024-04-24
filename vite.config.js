@@ -1,10 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import svgr from 'vite-plugin-svgr';
-import svgSpritePlugin from 'vite-plugin-svg-sprite'
+
 
 export default defineConfig({
-      plugins: [react(), svgr(), svgSpritePlugin()],
+      plugins: [react(), svgr()],
       resolve: {
         alias: {
           src: '/src',
@@ -13,5 +13,5 @@ export default defineConfig({
           assets: '/src/assets'
         },
       },
-      base: '/react_vite/',
+      base: 'https://github.com/NataliiaKostiuk/campers-frontend',
     });
