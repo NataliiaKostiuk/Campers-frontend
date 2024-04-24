@@ -33,13 +33,17 @@ background-color: #F7F7F7;
 `;
 
 export const Label = styled.label`
-position:relative;`;
+position:relative;
+`;
 
 export const LocWrap = styled.div`
 position:absolute;
-top:65px;
+top:50px;
 left: 18px;
 `;
 export const Wrap = styled.div`
 min-width: 360px;
+`
+export const Div = styled.div`
+margin-bottom: 32px;
 `
