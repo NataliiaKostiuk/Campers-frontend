@@ -43,7 +43,8 @@
     "lint-staged": "^14.0.1",
     "prettier": "3.0.3",
     "vite": "^4.4.5",
-    "vite-plugin-svg-sprite": "^0.5.1"
+    "vite-plugin-svg-sprite": "^0.5.1",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",
