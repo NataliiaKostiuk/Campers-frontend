@@ -28,14 +28,17 @@ export const Logo = styled.div`
 export const Navlink = styled(NavLink)`
 display: block;
 padding: 20px;
-font-size: 20px;
+font-family: Inter;
+font-size: 24px;
 font-weight: 600;
-line-height: 24px;
+line-height: 30px;
 text-align: left;
 color: #101828;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 750ms cubic-bezier(0.4, 0, 0.2, 1);
  &:hover {
 color: #E44848 ;
   }
-
+ &:focus {
+color: #E44848 ;
+  }
 `
