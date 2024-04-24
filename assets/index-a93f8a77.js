@@ -101,7 +101,7 @@ width: 1312px;
 height: 100%;
 margin-left: auto;
 margin-right: auto;
-`,H4=()=>d.jsxs(V4,{children:[d.jsx(W4,{}),d.jsx(k.Suspense,{fallback:null,children:d.jsx(kp,{})})]}),Z4="/react_vite/assets/campervan-3bf7fb9c.jpg",K4=M.section`
+`,H4=()=>d.jsxs(V4,{children:[d.jsx(W4,{}),d.jsx(k.Suspense,{fallback:null,children:d.jsx(kp,{})})]}),Z4="https://github.com/NataliiaKostiuk/campers-frontend/assets/campervan-3bf7fb9c.jpg",K4=M.section`
    margin-top: 70px;
   background-image:  url(${Z4});
   width: 100%;
